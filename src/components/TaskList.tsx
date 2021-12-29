@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { v4 as uuid } from 'uuid'
 
 import '../styles/tasklist.scss'
 
@@ -20,7 +19,7 @@ export function TaskList() {
         if (newTaskTitle) {
 
             const novaTesk = {
-                id: Math.floor(Math.random() * 10),
+                id: Math.random(),
                 title: newTaskTitle,
                 isComplete: false
             } as Task
